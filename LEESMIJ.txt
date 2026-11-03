@@ -1,11 +1,11 @@
-MIJN TANKREGISTER ONLINE - INSTALLATIE
+Mercedes Tankregister v10
 
-1. Maak een gratis account aan op github.com (alleen nodig om de app te publiceren).
-2. Maak een nieuwe PUBLIC repository, bijvoorbeeld mercedes-tankregister.
-3. Upload de bestanden index.html, manifest.webmanifest, sw.js, icon-192.png en icon-512.png naar de hoofdmap van de repository (niet de ZIP zelf).
-4. Ga naar Settings > Pages > Build and deployment > Deploy from a branch. Selecteer main en / (root), en sla op.
-5. Wacht enkele minuten. Open de URL die GitHub Pages toont, meestal https://GEBRUIKERSNAAM.github.io/mercedes-tankregister/
-6. Open de URL op je Samsung in Chrome > menu > Toevoegen aan startscherm > Installeren (indien aangeboden).
-7. Importeer de JSON-back-up uit je oude lokale tankregister.
+1. Maak eerst een JSON-back-up vanuit je huidige online Tankregister.
+2. Upload de bestanden uit deze ZIP naar de ROOT van je bestaande GitHub repository.
+3. Vervang de oude index.html, manifest.webmanifest, sw.js en iconbestanden.
+4. Wacht enkele minuten en herlaad de site in Chrome.
+5. Dezelfde URL en dezelfde localStorage sleutel worden gebruikt. Controleer altijd je gegevens.
 
-LET OP: De website is openbaar bereikbaar. De tankgegevens staan alleen lokaal in de browser en worden niet naar GitHub gestuurd. Publiceer nooit persoonlijke tankgegevens of foto's in de repository. Bij wissen van browsergegevens of wisselen van telefoon kan data verloren gaan. Maak geregeld JSON-back-ups. De fotoherkenning gebruikt een externe JavaScript-bibliotheek en vereist internet. Offline werkt de basisapp na een eerste succesvolle installatie, maar fotoherkenning niet gegarandeerd.
+Nieuw: donkerblauw dashboard, navigatie, kosten per 100 km, tankstationvoorstellen, schatting van tankinterval, datum/tijd bij invoer, vorige kilometerstand als voorstel.
+
+Let op: OCR blijft een experimentele functie, niet gegarandeerd voor pompdisplays of tickets. Ticketnaam-herkenning is nog niet betrouwbaar geïmplementeerd.
