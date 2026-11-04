@@ -5,8 +5,10 @@ Gebruikersbestand index.html uit mercedes_tankregister_v11_online (1).
 Bestaande auto-afbeelding, pictogrammen, formulier, lokale opslagsleutel,
 JSON-formaat en bibliotheekvrije XLSX-export behouden.
 Naam Tankregister, slogans verwijderd. Donkerblauwe basis doorontwikkeld.
-De goedgekeurde ontwerpafbeelding was niet toegankelijk in de eerdere chat;
-exacte visuele overeenkomst daarmee is daarom niet geverifieerd.
+HERZIENING OP BASIS VAN DE NU MEEGELEVERDE AFBEELDING 1
+Schermindeling en stijl opnieuw uitgewerkt aan de hand van de afbeelding.
+Geen pixelidentieke overeenkomst geclaimd; live gegevens en het label Indicatief
+wijken bewust af van de fictieve voorbeeldcijfers en de claim Zuinig.
 
 GESLAAGD: 14 AUTOMATISCHE CONTROLEGROEPEN (Node.js)
 - Periodegrens: twee februarisegmenten, 1000 km, 8 l/100 km, EUR 12/100 km.
@@ -52,3 +54,17 @@ Bewaar eerst een JSON-back-up. Controleer bestaande aantallen en een bekende tan
 Test toevoegen/wijzigen met een herkenbare eigen proefinvoer, exporteer een back-up
 en Excel, en controleer een echte scherpe pompfoto tegenover het voorstel.
 Beoordeel de vormgeving op je telefoon. Gebruik handmatige invoer bij twijfel.
+
+EXTRA CONTROLES NA VISUELE HERZIENING
+- Dezelfde 14 automatische controlegroepen opnieuw geslaagd.
+- Gesimuleerde appcontrole opnieuw geslaagd voor laden, toevoegen, wijzigen,
+  ongeldige back-up, statistiek en het nieuwe dashboard.
+- Schermwissels Home > Statistiek > Home en zichtbaarheid gecontroleerd in simulatie.
+- Dashboard toont actuele aantallen en verbruik na een wijziging.
+- SVG-IDs uniek en alle nieuwe lokale bestanden aanwezig.
+- Browserpreview opnieuw onbereikbaar; geen nieuwe browserscreenshot beschikbaar.
+- De gegenereerde auto-uitsnede is visueel bekeken, niet de gerenderde hele app.
+- OCR en back-upfuncties zijn inhoudelijk niet gewijzigd bij deze herziening.
+
+KLEURCORRECTIE ZILVER
+Alleen voertuigafbeelding gewijzigd en cacheversie bijgewerkt. Zilveren lak en transparante uitsnede visueel gecontroleerd. Beide ingesloten voertuigafbeeldingen in het HTML-voorbeeld vervangen. Overige appcode ongewijzigd.

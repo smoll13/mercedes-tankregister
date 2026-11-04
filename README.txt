@@ -1,4 +1,5 @@
-TANKREGISTER V12 — UPLOADHANDLEIDING
+TANKREGISTER V12 — ONTWERP OP BASIS VAN AFBEELDING 1
+UPLOADHANDLEIDING
 
 VOOR JE BEGINT
 1. Open je huidige app op het toestel en in de browser waar je tankgegevens staan.
@@ -6,11 +7,11 @@ VOOR JE BEGINT
 3. Upload nooit je persoonlijke JSON-back-up of tankfoto's naar de repository.
 
 UPLOAD NAAR JE BESTAANDE GITHUB PAGES
-1. Pak Tankregister-V12.zip uit.
+1. Pak Tankregister-V12-zilver.zip uit.
 2. Open dezelfde GitHub-repository als je huidige tankregister.
 3. Kies Add file > Upload files.
 4. Upload de INHOUD van deze map naar dezelfde publicatiemap als voorheen.
-   index.html, core.js, stats.js, ocr.js, v12.css, sw.js,
+   index.html, core.js, stats.js, ocr.js, ui.js, v12.css, vehicle.png, sw.js,
    manifest.webmanifest, icon-192.png, icon-512.png en .nojekyll.
    README.txt en TESTRAPPORT.txt mogen mee; ze zijn geen persoonlijke data.
    Plaats index.html direct in de publicatiemap, niet in een extra V12-map.
@@ -82,3 +83,19 @@ GitHub Pages vereist geen server, API-sleutel, npm of buildstap voor deze app.
 BRONNEN VOOR UPLOAD EN OCR-API
 https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site
 https://github.com/naptha/tesseract.js/blob/v5.1.1/docs/api.md
+
+VISUELE HERZIENING
+De startpagina volgt de meegeleverde afbeelding 1: voertuigkaart, verbruiksmeter,
+vier kerncijfers, scanknop, drie recente tankbeurten en onderste navigatie.
+Home, Tanken, Statistiek, Voertuigen en Meer zijn aparte schermen. Bekijk alles
+opent de volledige historiek. Het tandwiel opent export en back-up.
+Voertuigen toont de bestaande Mercedes; geen nieuwe meerwagenopslag toegevoegd.
+De auto is een met de ingebouwde beeldgenerator gemaakte transparante uitsnede
+op basis van je voorbeeld. Pictogrammen en vormgeving zijn SVG/CSS in de app.
+Het is een functionele vertaling van het voorbeeld, geen pixelidentieke afbeelding.
+Live cijfers komen uitsluitend uit je register. Indicatief vervangt het label Zuinig;
+er is geen voertuiggebonden zuinigheidsnorm beschikbaar.
+Na de upload moet ook ui.js en vehicle.png aanwezig zijn. De cache heeft een
+nieuwe versie; sluit de app volledig na de eerste online herlaadbeurt en open opnieuw.
+
+KLEURCORRECTIE: de voertuigafbeelding is nu zilver metallic, op verzoek van de gebruiker.
