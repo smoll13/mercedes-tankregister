@@ -1,0 +1,54 @@
+TANKREGISTER V12 — TESTRAPPORT — 4 NOVEMBER 2026
+
+UITGANGSPUNT
+Gebruikersbestand index.html uit mercedes_tankregister_v11_online (1).
+Bestaande auto-afbeelding, pictogrammen, formulier, lokale opslagsleutel,
+JSON-formaat en bibliotheekvrije XLSX-export behouden.
+Naam Tankregister, slogans verwijderd. Donkerblauwe basis doorontwikkeld.
+De goedgekeurde ontwerpafbeelding was niet toegankelijk in de eerdere chat;
+exacte visuele overeenkomst daarmee is daarom niet geverifieerd.
+
+GESLAAGD: 14 AUTOMATISCHE CONTROLEGROEPEN (Node.js)
+- Periodegrens: twee februarisegmenten, 1000 km, 8 l/100 km, EUR 12/100 km.
+- Ontbrekende kilometerstand onderbreekt de intervalberekening.
+- Dalende kilometerstand wordt niet als positieve afstand gebruikt.
+- Leeg register toont geen verzonnen verbruik.
+- Gemiddelde literprijs wordt gewogen berekend.
+- JSON-back-upvalidatie met ongewijzigde gegevens.
+- Ongeldige types, dubbele ID's en onveilige foto-inhoud worden geweigerd.
+- Kommagetallen en ontbrekende decimalen worden volgens veldtype geïnterpreteerd.
+- Herhaalde passende OCR-tekst kan een voorstel opleveren.
+- Rekenkundig onjuiste OCR-combinatie wordt geweigerd.
+- OCR met lage confidence wordt geweigerd.
+- Meerduidige OCR-combinaties worden geweigerd.
+- Alle inline en externe JavaScript-bestanden syntactisch gecontroleerd.
+- Lokale assets aanwezig, geen dubbele HTML-ID's, oude opslag/back-upidentiteit behouden.
+
+GESLAAGD: APP-SIMULATIE MET EEN VEREENVOUDIGD DOCUMENTMODEL
+- App start met bestaande V11-gegevens zonder deze bij laden te overschrijven.
+- Nieuwe tankbeurt wordt onder dezelfde opslagsleutel toegevoegd.
+- Alles-filter toont de verwachte 500 km en 8,00 l/100 km.
+- Ongeldige hersteldata laat het vorige register intact.
+- Wijzigen vervangt dezelfde tankbeurt zonder duplicaat.
+Deze simulatie is geen echte browser- of cameravalidatie.
+
+NIET GEVERIFIEERD
+- Geen echte pompbeelden of tickets meegeleverd. Geen gemeten OCR-succespercentage.
+- OCR-beeldherkenning, downloads en volledige Tesseract-pijplijn niet end-to-end uitgevoerd.
+  De OCR-tests hierboven gebruiken gesimuleerde tekst, niet echte herkende foto's.
+- Geen speciale zevensegment-engine of automatische displaydetectie geïmplementeerd.
+  Verbeteringen zijn handmatige uitsneden op origineel beeld, vier preprocessingvarianten,
+  herhaalde uitlezing, confidencefilter, ambiguïteitsweigering en expliciete voorstelstap.
+- Lokale browserpreview in ingebouwde browser mislukte met ERR_CONNECTION_TIMED_OUT.
+- Windows-browsercontrole werd door Computer Use gestopt omdat URL-beleidscontrole
+  voor die browser nog niet ondersteund is. Geen screenshots of visuele goedkeuring.
+- Responsieve weergave, touchselecties, echte camera, geïnstalleerde PWA, offlinegebruik
+  en update vanaf een bestaande V11-service-worker niet in een echte browser getest.
+- Excel-exportcode behouden; bestand niet in Microsoft Excel geopend tijdens deze test.
+- GitHub-upload en daadwerkelijke publicatie niet uitgevoerd.
+
+AANBEVOLEN EERSTE CONTROLE NA UPLOAD
+Bewaar eerst een JSON-back-up. Controleer bestaande aantallen en een bekende tankbeurt.
+Test toevoegen/wijzigen met een herkenbare eigen proefinvoer, exporteer een back-up
+en Excel, en controleer een echte scherpe pompfoto tegenover het voorstel.
+Beoordeel de vormgeving op je telefoon. Gebruik handmatige invoer bij twijfel.
