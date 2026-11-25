@@ -1,1 +1,8 @@
-{"version": "2.2.0", "notes": ["Resterende dagen als gekleurde labels voor onderhoud, verzekering en keuring", "Optionele kilometergrens voor volgend onderhoud"]}
+{
+  "version": "2.2.1",
+  "notes": [
+    "Correcte versieaanduiding en verbeterde updatecontrole",
+    "Herinnering voor volledige back-up na 30 dagen",
+    "Gemiddelde kilometers en dagen tussen tankbeurten"
+  ]
+}
